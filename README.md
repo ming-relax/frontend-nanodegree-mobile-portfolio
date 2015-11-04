@@ -1,5 +1,26 @@
 ##### Part 1: Optimize PageSpeed Insights score for index.html
+In this project, I have tried the follwing things:
 
+- use `asyc` for scripts that don't change DOM
+
+- specify media type for external css
+
+- compress and inline css for current page
+
+To get the css that is needed between:
+
+```css
+<style media="screen">
+</style>
+```
+
+Run the following command:
+
+`npm install`
+
+`npm run build`
+
+To see the result, run the following commands:
 1. Run this command
 `$> python -m SimpleHTTPServer 8080`
 
