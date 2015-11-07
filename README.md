@@ -38,3 +38,17 @@ To upload assets into google cloud storage, I run this:
 `$> python -m SimpleHTTPServer 8080`
 
 2. Use your browser and you can see the result.
+
+A list of optimization I made:
+
+- Optimize css queries in `determineDx`.
+
+- Optimize css queries in `changePizzaSizes`
+
+- Put `updatePositions` into `requestAnimationFrame`
+
+- Optimize css queries in `updatePositions`.
+
+- Optimize css queries in line 473 to make the first load faster.
+
+- Determine the number of moving pizza based on the current window height to reduce the number of pizza needs to be drawn.
