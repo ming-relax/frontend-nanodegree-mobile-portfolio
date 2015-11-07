@@ -20,10 +20,10 @@
   "homepage": "https://github.com/ming-relax/frontend-nanodegree-mobile-portfolio#readme",
   "dependencies": {},
   "devDependencies": {
-    "clean-webpack-plugin": "^0.1.4",
-    "css-loader": "^0.21.0",
-    "extract-text-webpack-plugin": "^0.8.2",
-    "style-loader": "^0.13.0",
-    "webpack": "^1.12.2"
+    "grunt": "^0.4.5",
+    "grunt-contrib-compress": "^0.14.0",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-imagemin": "^0.9.4",
+    "grunt-image-resize": "^1.0.0"
   }
 }

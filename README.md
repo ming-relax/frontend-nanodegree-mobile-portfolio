@@ -1,5 +1,14 @@
 ##### Part 1: Optimize PageSpeed Insights score for index.html
-In this project, I have tried the follwing things:
+
+To see the result of the optimized website, please visit:
+
+https://storage.googleapis.com/udacity-5/index.html
+
+Google PageSpeed Insights test result:
+
+https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fstorage.googleapis.com%2Fudacity-5%2Findex.html&tab=mobile
+
+In this project, I have tried the following things:
 
 - use `asyc` for scripts that don't change DOM
 
@@ -7,28 +16,21 @@ In this project, I have tried the follwing things:
 
 - compress and inline css for current page
 
-To get the css that is needed between:
+- resize, minimize images
 
-```css
-<style media="screen">
-</style>
-```
+- compress html, css, js when release the website.
 
-Run the following command:
+- set Cache-Control for resources in the website.
 
-`npm install`
+I am using `grunt` to generate css, image, js I want; and using google cloud storage to host the website.
 
-`npm run build`
+To generate the assets in this project, please install `grunt` and run:
 
-To see the result, run the following commands:
-1. Run this command
-`$> python -m SimpleHTTPServer 8080`
+`grunt`
 
-2. ngrok 8080
+To upload assets into google cloud storage, I run this:
 
-3. Goto google's speed insight test:
-
-https://developers.google.com/speed/pagespeed/insights/
+`./upload`
 
 ##### Part 2: Optimize Frames per Second in pizza.html
 

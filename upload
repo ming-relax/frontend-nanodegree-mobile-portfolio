@@ -1,0 +1,8 @@
+#!/bin/bash
+gsutil -h "Cache-Control:public, max-age=36000" cp -z css -a public-read dist/project1.css gs://udacity-5/dist
+gsutil -h "Cache-Control:public, max-age=36000" cp -z css -a public-read dist/print.css gs://udacity-5/dist
+gsutil -h "Cache-Control:public, max-age=36000" cp -z jpg -a public-read dist/profilepic-min.jpg gs://udacity-5/dist
+gsutil -h "Cache-Control:public, max-age=36000" cp -z jpg -a public-read dist/pizzeria-115-75-min.jpg gs://udacity-5/dist
+gsutil -h "Cache-Control:public, max-age=36000" cp -z js -a public-read dist/perfmatters.js gs://udacity-5/dist
+
+gsutil -h "Cache-Control:public, max-age=36000" cp -z html -a public-read index.html gs://udacity-5
